@@ -17,9 +17,10 @@ loginFormElement.addEventListener('submit', function(event) {
 
   const email = inputEmailElement.value;
   const password = inputPasswordElement.value;
+  
   if (email == expectedEmail && password == expectedPassword) {
-    goToHome();
+    goToHome(); // Navigasi ke halaman home jika login berhasil
   } else {
-    showPopUp();
+    showPopUp(); // Tampilkan pop up error jika login gagal
   }
 });
